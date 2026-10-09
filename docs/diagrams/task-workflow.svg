@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1040" width="1240" height="1040" role="img" aria-labelledby="title description">
+<title id="title">Цикл задачи в Cockpit Tasks</title>
+<desc id="description">Владелец поручает работу агенту. Агент добавляет задачу в очередь, выполняет и закрывает её в историю либо откладывает. Владелец проверяет результат; замечания возвращают ту же задачу в очередь.</desc>
+<rect width="1240" height="1040" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#9484e9"/></marker></defs>
+<path data-edge-id="e12" d="M 260 240 L 420 240" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e14" d="M 600 240 L 780 240" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e16" d="M 940 280 L 940 410" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e18" d="M 170 280 L 170 460 L 680 460" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e20" d="M 940 510 L 940 570 L 800 570 L 800 640" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e22" d="M 1090 510 L 1090 640" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e24" d="M 680 680 L 440 680" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e26" d="M 260 720 L 260 830" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e27" d="M 386 720 L 386 780 L 830 780 L 830 830" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<path data-edge-id="e28" d="M 80 885 L 30 885 L 30 150 L 940 150 L 940 200" fill="none" stroke="#9484e9" stroke-width="2" marker-end="url(#arrow)"/>
+<text data-cell-id="n1" x="80" y="55" dominant-baseline="central" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#5e548d">Как задача проходит через Cockpit</text>
+<text data-cell-id="n2" x="80" y="105" dominant-baseline="central" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">Поручение → работа → проверка → обратная связь</text>
+<rect data-cell-id="n3" x="80" y="200" width="180" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n3" x="170" y="240" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">ВЛАДЕЛЕЦ</text>
+<rect data-cell-id="n4" x="420" y="200" width="180" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n4" x="510" y="240" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">АГЕНТ</text>
+<rect data-cell-id="n5" x="780" y="200" width="320" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n5" x="940" y="226.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">ОЧЕРЕДЬ</text>
+<text data-cell-id="n5" x="940" y="253.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">вкладка «Агенту»</text>
+<rect data-cell-id="n6" x="680" y="410" width="520" height="100" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n6" x="940" y="446.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">ТЕКУЩАЯ ЗАДАЧА</text>
+<text data-cell-id="n6" x="940" y="473.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">правки, коммиты, исполнители</text>
+<rect data-cell-id="n7" x="680" y="640" width="240" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n7" x="800" y="666.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">ИСТОРИЯ</text>
+<text data-cell-id="n7" x="800" y="693.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">задача закрыта</text>
+<rect data-cell-id="n8" x="980" y="640" width="220" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n8" x="1090" y="666.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">БЭКЛОГ</text>
+<text data-cell-id="n8" x="1090" y="693.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">с причиной</text>
+<rect data-cell-id="n9" x="80" y="640" width="360" height="80" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n9" x="260" y="666.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">ВЛАДЕЛЕЦ ПРОВЕРЯЕТ</text>
+<text data-cell-id="n9" x="260" y="693.5" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">карточка во вкладке «Мне»</text>
+<rect data-cell-id="n10" x="80" y="830" width="360" height="110" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n10" x="260" y="858" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">«Есть замечания»</text>
+<text data-cell-id="n10" x="260" y="885" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">Ответ агенту и возврат</text>
+<text data-cell-id="n10" x="260" y="912" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">той же задачи в очередь</text>
+<rect data-cell-id="n11" x="650" y="830" width="360" height="110" fill="white" stroke="#9484e9" stroke-width="2"/>
+<text data-cell-id="n11" x="830" y="858" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">«Принято»</text>
+<text data-cell-id="n11" x="830" y="885" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">Ответ агенту;</text>
+<text data-cell-id="n11" x="830" y="912" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#5e548d">задача остаётся в истории</text>
+<rect x="292.57" y="221.85" width="94.86" height="36.3" fill="white"/>
+<text data-cell-id="lbl13" x="340" y="240" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#5e548d">реплика</text>
+<rect x="637.08" y="221.85" width="105.84" height="36.3" fill="white"/>
+<text data-cell-id="lbl15" x="690" y="240" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-size="18" font-weight="normal" fill="#5e548d">task_add</text>
+<rect x="876.1" y="326.85" width="127.8" height="36.3" fill="white"/>
+<text data-cell-id="lbl17" x="940" y="345" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-size="18" font-weight="normal" fill="#5e548d">task_start</text>
+<rect x="50.9" y="429.7" width="347.4" height="60.6" fill="white"/>
+<text data-cell-id="lbl19" x="224.6" y="447.85" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#5e548d">Правка, комментарий</text>
+<text data-cell-id="lbl19" x="224.6" y="472.15" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#5e548d">Ревизия +1; агент перечитывает</text>
+<rect x="881.59" y="539.1" width="116.82" height="36.3" fill="white"/>
+<text data-cell-id="lbl21" x="940" y="557.25" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-size="18" font-weight="normal" fill="#5e548d">task_done</text>
+<rect x="1026.1" y="556.85" width="127.8" height="36.3" fill="white"/>
+<text data-cell-id="lbl23" x="1090" y="575" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-size="18" font-weight="normal" fill="#5e548d">task_defer</text>
+<rect x="501.59" y="661.85" width="116.82" height="36.3" fill="white"/>
+<text data-cell-id="lbl25" x="560" y="680" dominant-baseline="central" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#5e548d">карточка¹</text>
+<text data-cell-id="n29" x="80" y="985" dominant-baseline="central" text-anchor="start" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#5e548d">¹ Карточка проверки создаётся, если task_done передан review, отличный от «none».</text>
+</svg>

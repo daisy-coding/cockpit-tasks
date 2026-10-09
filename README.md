@@ -10,6 +10,39 @@ keep a backlog, and revisit task history. Search finds tasks by number or text.
 The mod identifier is `cockpit`; its commands and state keys retain that name.
 The panel labels and the descriptions in its configuration schema are in Russian.
 
+## Task lifecycle
+
+![Task lifecycle: owner, agent queue, current task, history, backlog and owner review](docs/diagrams/task-workflow.svg)
+
+The diagram uses the same Russian labels as the panel. `task_add` records work;
+`task_start` makes it current. After verification, `task_done` closes the task in
+history and creates an owner review card when `review` is not `"none"`.
+`task_defer` saves a reason and moves unfinished work to the backlog.
+
+The owner's edits and comments change the revision; the agent must read them
+before closing or deferring the task. «Принято» sends acceptance to the agent
+and keeps the task in history. «Есть замечания» returns the same available task
+to the queue with the previous result and the owner's comment. If the original
+task is unavailable, the response asks the agent to record the correction as
+new work. `task_add` with `start: true` can record and start work in one call.
+
+The diagram is also available as an editable
+[draw.io source](docs/diagrams/task-workflow.drawio).
+
+## Screenshots
+
+Actual terminal captures from 8 October 2026. They show the interface before
+the 0.16.98 release; task numbers and development comments are examples, and
+the captures do not verify changes made after that date. The full-terminal
+capture is cropped to the panel. EXIF and XMP metadata have been removed;
+the retained pixels and text are unchanged.
+
+| Agent queue | Expanded task description |
+| --- | --- |
+| <img src="docs/screenshots/task-queue.png" width="360" alt="Agent tab with current tasks and the queue"> | <img src="docs/screenshots/expanded-task.png" width="360" alt="Expanded task card with the full description"> |
+| **Task details** | **History and comments** |
+| <img src="docs/screenshots/task-details.png" width="360" alt="Task page with description and acceptance text"> | <img src="docs/screenshots/task-history.png" width="360" alt="Completed task with its comment history"> |
+
 ## Requirements
 
 Use Linux or macOS, Claude Code with mod support, Python 3.10+, and Git.
@@ -58,17 +91,6 @@ open its details. The panel normally opens when a session starts; `autoOpen`
 controls that behavior.
 
 ## Settings
-
-```mermaid
-flowchart LR
-    Owner[Owner gives a task] --> Queue[Agent queue]
-    Queue --> Agent[Agent works and verifies]
-    Agent --> Review[Owner reviews the result]
-    Review --> History[Completed work in history]
-    Review --> Queue
-    Queue --> Backlog[Deferred work]
-    Backlog --> Queue
-```
 
 The task page keeps the full description and comments. Long descriptions can
 have a cached Haiku summary for their cards; owner requests and acceptance text

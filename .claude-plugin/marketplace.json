@@ -1,0 +1,15 @@
+{
+  "name": "cockpit-tasks",
+  "owner": {
+    "name": "Roman Dmytriev"
+  },
+  "description": "A local task panel for Claude Code: agent queue, owner review, backlog, history and search.",
+  "plugins": [
+    {
+      "name": "cockpit",
+      "source": "./agents/claude/plugins/cockpit",
+      "version": "0.16.98",
+      "description": "Задачи, очередь и восстановление работы на движке FileTree"
+    }
+  ]
+}

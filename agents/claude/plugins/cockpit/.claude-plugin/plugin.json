@@ -1,0 +1,54 @@
+{
+  "name": "cockpit",
+  "version": "0.16.98",
+  "description": "Задачи, очередь и восстановление работы на движке FileTree",
+  "author": {
+    "name": "Roman Dmytriev"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "summarizeDescriptions": {
+      "type": "boolean",
+      "title": "Короткие описания карточек",
+      "description": "Готовить сводку длинного описания дешёвой моделью один раз; полный текст остаётся на странице задачи",
+      "default": true
+    },
+    "autoOpen": {
+      "type": "boolean",
+      "title": "Открывать задачи при запуске",
+      "description": "Показывать панель задач при старте сессии, сохраняя фокус в строке Claude Code",
+      "default": true
+    },
+    "redirectTodos": {
+      "type": "boolean",
+      "title": "Задачи агента в Cockpit",
+      "description": "Перенаправлять штатные TodoWrite и TaskCreate/TaskUpdate/TaskList/TaskGet на инструменты задач Cockpit",
+      "default": true
+    },
+    "compactTaskCalls": {
+      "type": "boolean",
+      "title": "Вызовы задач одной строкой",
+      "description": "Показывать вызовы инструментов задач Cockpit короткой строкой с номером и исходом, без отдельного блока результата",
+      "default": true
+    },
+    "resumeAfterCompact": {
+      "type": "boolean",
+      "title": "Продолжать после сжатия",
+      "description": "После /compact агент сам продолжает задачу, работу над которой ты прервал. Выключено по умолчанию: с этой настройкой /compact означает «сжать и продолжить»",
+      "default": false
+    },
+    "glyphs": {
+      "type": "string",
+      "title": "Значки",
+      "description": "Как в FileTree: auto, Nerd Font или запасные Unicode",
+      "options": ["auto", "nerd", "plain"],
+      "default": "auto"
+    },
+    "timeZone": {
+      "type": "string",
+      "title": "Часовой пояс",
+      "description": "Пояс для времени комментариев и истории задач: имя IANA, например Europe/Kyiv. Пусто — пояс машины, где запущен Claude Code (при работе по SSH — пояс сервера)",
+      "default": ""
+    }
+  }
+}

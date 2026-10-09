@@ -1,0 +1,18 @@
+{
+  "cases": [
+    {"query":" ПАН ЕЛЬ ","terms":["пан","ель"],"numbers":[],"alias":"TASK-190","title":"Панель задач","description":"","matches":true,"ranges":[{"start":0,"end":6}]},
+    {"query":"ПАНЕЛЬ ёлка","terms":["панель","елка"],"numbers":[],"alias":"TASK-190","title":"Панель задач","description":"Сохранить ЕЛКУ и ЁЛКА","matches":true,"ranges":[{"start":0,"end":6}]},
+    {"query":"пан очередь","terms":["пан","очередь"],"numbers":[],"alias":"TASK-12","title":"Панель задач","description":"История закрытых","matches":false,"ranges":[{"start":0,"end":3}]},
+    {"query":"190","terms":["190"],"numbers":["190"],"alias":"TASK-190","title":"Проверить поиск","description":"","matches":true,"ranges":[]},
+    {"query":"#190","terms":["190"],"numbers":["190"],"alias":"TASK-2","title":"Исправить отказ 190","description":"","matches":true,"ranges":[{"start":16,"end":19}]},
+    {"query":"TASK-190","terms":["190"],"numbers":["190"],"alias":"TASK-190","title":"Проверить поиск","description":"","matches":true,"ranges":[]},
+    {"query":"task 190","terms":["190"],"numbers":["190"],"alias":"TASK-2","title":"Проверить поиск","description":"Дефект 190 исправлен","matches":true,"ranges":[]},
+    {"query":"Task 190 ПАН","terms":["190","пан"],"numbers":["190"],"alias":"TASK-190","title":"Панели задач","description":"","matches":true,"ranges":[{"start":0,"end":3}]},
+    {"query":"API REST","terms":["api","rest"],"numbers":[],"alias":"TASK-1","title":"Rest API","description":"","matches":true,"ranges":[{"start":0,"end":4},{"start":5,"end":8}]},
+    {"query":"пан пан","terms":["пан"],"numbers":[],"alias":"TASK-1","title":"Суперпанель и панели","description":"","matches":true,"ranges":[{"start":5,"end":8},{"start":14,"end":17}]},
+    {"query":"ЁЛ","terms":["ел"],"numbers":[],"alias":"TASK-1","title":"🧑‍💻 界 Ёлка","description":"","matches":true,"ranges":[{"start":6,"end":8}]},
+    {"query":"пан","terms":["пан"],"numbers":[],"alias":"TASK-1","title":"é панель","description":"","matches":true,"ranges":[{"start":2,"end":5}]},
+    {"query":"99999999999999999999999999","terms":["99999999999999999999999999"],"numbers":["99999999999999999999999999"],"alias":"TASK-1","title":"Поиск","description":"","matches":false,"ranges":[]}
+  ],
+  "invalidQueries":["","   ","\n\t","# ---","пан\ud800"]
+}

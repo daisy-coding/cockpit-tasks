@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "marketplace": "cockpit-tasks",
+  "installation": {
+    "pythonMinimum": [
+      3,
+      10
+    ],
+    "claudeBaseline": [
+      2,
+      1,
+      289
+    ],
+    "claudeBaselineStatus": "Conservative source API baseline, not a claim about the oldest compatible release; validate each selected mod before enabling it.",
+    "peerSdk": "mcp==2.2.0"
+  },
+  "plugins": [
+    {
+      "name": "cockpit",
+      "source": "agents/claude/plugins/cockpit",
+      "requires": [
+        "python",
+        "git",
+        "runtime"
+      ]
+    }
+  ]
+}

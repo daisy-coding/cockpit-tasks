@@ -14,8 +14,9 @@ The panel labels and the descriptions in its configuration schema are in Russian
 
 ![Task lifecycle: owner, agent queue, current task, history, backlog and owner review](docs/diagrams/task-workflow.svg)
 
-The diagram uses the same Russian labels as the panel. `task_add` records work;
-`task_start` makes it current. After verification, `task_done` closes the task in
+The diagram explains the workflow in English; the panel itself uses Russian labels.
+`task_add` records work; `task_start` makes it current. After verification,
+`task_done` closes the task in
 history and creates an owner review card when `review` is not `"none"`.
 `task_defer` saves a reason and moves unfinished work to the backlog.
 
